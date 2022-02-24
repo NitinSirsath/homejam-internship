@@ -18,7 +18,7 @@ const reviewData = [
     {
         img: user ,
         country: usa,
-        user: 'Hellen Jummy',    
+        user: 'Hellen Jummye',    
         location: 'PALOALTO, CA'
     },
 ]

@@ -88,8 +88,8 @@ const Review = () => {
         <CardContainer>
           {data.map((ele) => {
             return (
-              <>
-                <Card>
+             
+                <Card key={ele.user}>
                   <CardInfo>
                     <Img background={ele.img}></Img>
                     <CardInfoUser>
@@ -105,7 +105,7 @@ const Review = () => {
                     Cumque illo alias officiis, iste dolore nam!
                   </Dummy>
                 </Card>
-              </>
+           
             );
           })}
         </CardContainer>

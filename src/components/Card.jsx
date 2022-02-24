@@ -65,6 +65,9 @@ const CardWrapper = styled.div`
                 padding: 3px 7px;
                 border-radius: 2px;
             }
+            @media (max-width: 768px) {
+    flex-direction: column;
+  }
     `
 const MoreInfo = styled.div`
     display: flex;
@@ -92,8 +95,7 @@ const Card = () => {
        <CardWrapper>
            {
                data.map((ele)=>{
-                   return <>
-                   <CardContainer>
+                   return <CardContainer key={ele.name}>
                     <Img background={ele.img}></Img>
                     <CardInfo>
                         <span>{ele.occupation}</span>
@@ -104,7 +106,7 @@ const Card = () => {
                         </MoreInfo>
                     </CardInfo>
                    </CardContainer>
-                   </> 
+                   
                })
            }
        </CardWrapper>

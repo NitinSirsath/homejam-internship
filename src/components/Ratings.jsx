@@ -25,20 +25,19 @@ const Container = styled.div`
 
 const Ratings = () => {
   return (
-    <>
+  
     <Container>
         {data.map((ele) => {
             // console.log(ele);
-            return <>
-            <RatingBoxes key={ele.id}>
+            return  <RatingBoxes key={ele.id}>
                 <img src={ele.img} height='14px' alt="" />
                 <p>{ele.value}</p>
                 <p>{ele.label}</p>
             </RatingBoxes>
-            </>
+          
         })}
     </Container>
-    </>
+   
   )
 }
 
