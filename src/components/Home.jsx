@@ -8,8 +8,9 @@ const HeroContainer = styled.div`
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5)), url(${props => props.background});
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1)), url(${props => props.background});
     height: 100vh;
+    
 `
 const TitleBox = styled.div`
     color: #dbdada;

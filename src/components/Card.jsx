@@ -5,7 +5,7 @@ import arrow from  './img/arrow.png'
 
 const Container = styled.div`
     padding: 0px 150px ;
-    background-color: #0c0b0b;
+    background-color: #000000;
     color: white;
 `
 const Heading = styled.div`
@@ -19,7 +19,19 @@ const Heading = styled.div`
     }
     h2{
         font-weight: lighter;
-        border-bottom: 1px solid blue;
+        /* border-bottom: 2px solid blue; */
+        position: relative;
+        ::after{
+            content: '';
+            position: absolute;
+            bottom: -7px;
+            left: 0;
+            width: 48px;
+            height: 2px;
+            background-color: blue;
+            
+            
+        }
     }
 `
 const CardContainer = styled.div`
@@ -28,7 +40,8 @@ const CardContainer = styled.div`
     border-radius: 10px;
     background-color: #0d0d22;
    width: 240px;
-   box-shadow: rgba(38, 235, 120, 0.8) 5px -5px 0px 3px;
+   box-shadow: rgba(53, 23, 100, 0.8) 7px -5px 0px 3px;
+   
 
 
     span{
@@ -49,7 +62,8 @@ const Img = styled.div`
     background-image:  url(${props => props.background});
     /* height: 65%; */
    height: 230px;
-   
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
 `
 
 const CardWrapper = styled.div`

@@ -6,7 +6,7 @@ import data from "./reviewData";
 
 const Container = styled.div`
   padding: 0px 150px;
-  background-color: #0c0b0b;
+  background-color: #000000;
   color: white;
   height: 70vh;
 `;
@@ -19,8 +19,17 @@ const Heading = styled.div`
 
   h2 {
     font-weight: lighter;
-    border-bottom: 1px solid blue;
-  }
+    /* border-bottom: 1px solid blue; */
+    position: relative;
+        ::after{
+            content: '';
+            position: absolute;
+            bottom: -7px;
+            left: 0;
+            width: 48px;
+            height: 2px;
+            background-color: blue;
+        }}
   p {
     display: flex;
     justify-content: center;
@@ -66,6 +75,7 @@ const CardInfoUser = styled.div`
   }
   h5 {
     margin-bottom: 5px;
+    
   }
 `;
 const Dummy = styled.div`
